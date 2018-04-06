@@ -1,13 +1,13 @@
-var gulp    = require('gulp'),
-postcss = require('gulp-postcss'),
-// (autoprefixer -   -webkit-columns: 300px 2; and something like that)
-autoprefixer = require('autoprefixer'),
-// vars in css file
-cssvars      = require('postcss-simple-vars'),
-//now we can nest our rules
-nested       = require('postcss-nested'),
-cssImport    = require('postcss-import'),
-mixins    = require('postcss-mixins');
+var   gulp                                = require('gulp'),
+      postcss                             = require('gulp-postcss'),
+      // (autoprefixer -   -webkit-columns: 300px 2; and something like that)
+      autoprefixer                        = require('autoprefixer'),
+      // vars in css file
+      cssvars                             = require('postcss-simple-vars'),
+      //now we can nest our rules
+      nested                              = require('postcss-nested'),
+      cssImport                           = require('postcss-import'),
+      mixins                              = require('postcss-mixins');
 
 gulp.task('styles', function () {
   // console.log("Imaging Sass or PostCSS task is running here.");

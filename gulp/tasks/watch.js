@@ -1,7 +1,9 @@
-var gulp  = require('gulp'),
-    watch = require('gulp-watch'),
+var   gulp        = require('gulp'),
+      watch       = require('gulp-watch'),
       // we want to require only the method create()
-      browserSync  = require('browser-sync').create();
+      browserSync = require('browser-sync').create();
+
+
 gulp.task('watch', function () {
 
   browserSync.init({
