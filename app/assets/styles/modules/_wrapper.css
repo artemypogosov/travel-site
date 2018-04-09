@@ -2,7 +2,7 @@
   overflow: hidden;
   padding-left: 18px;
   padding-right: 18px;
-  max-width: 1200px;
+  max-width: 1236px;
   margin-left: auto;
   margin-right: auto;
 
@@ -10,6 +10,14 @@
     max-width: 976px;
   }
 
+  &--b-margin {
+    margin-bottom: 1rem;
+    }
+  @mixin atSmall {
+  &--b-margin {
+    margin-bottom: 4.125rem;
+    }
+  }
   .wrapper {
     padding-left: 0;
     padding-right: 0;
