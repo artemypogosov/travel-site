@@ -465,6 +465,10 @@ img {
           box-sizing: border-box;
 }
 
+a {
+  color: #d59541;
+}
+
 .large-hero {
   border-bottom: 10px solid #2f5572;
   position: relative;
@@ -657,6 +661,12 @@ img {
     margin-bottom: 1.6em;
   }
 
+@media (min-width: 530px) {
+  .headline--t-margin {
+    margin-top: 0;  
+  }
+  }
+
 .row::after {
     content: "";
     clear: both;
@@ -688,4 +698,20 @@ img {
      .row__medium-8--smaller {
     width: 63%;     
     }
+  }
+
+.generic-content-container p {
+    line-height: 1.65;
+    margin: 1.8rem 0;
+  }
+
+@media (min-width: 530px) {
+
+.generic-content-container {
+    font-size: 1.125rem
+}
+  }
+
+.generic-content-container p a {
+    font-weight: 700;
   }
