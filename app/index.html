@@ -31,7 +31,7 @@
       </ul>
     </nav>
   </header>
-
+  <!-- large-hero -->
   <div class="large-hero">
 
     <picture>
@@ -53,7 +53,11 @@
       </div>
     </div>
   </div>
+  <!-- /large-hero -->
 
+
+
+  <!-- page section -->
   <div id="our-beginning" class="page-section">
     <div class="wrapper">
       <h2 class="headline headline--centered headline--light headline--b-margin-small">The first trip we planned
@@ -72,8 +76,8 @@
         <div class="row__medium-4 row__medium-4--larger">
           <picture>
             <source sizes="404px" media="(min-width: 1024px)" srcset="./assets/images/our-start.jpg 404w,                ./assets/images/our-start-hi-dpi.jpg 808w">
-            <source sizes="320px" media="(min-width: 800px)" srcset="./assets/images/our-start-portrait.jpg 382w,       ./assets/images/our-start-portrait-hi-dpi.jpg 764w">
-            <img sizes="800px" srcset="./assets/images/our-start-landscape.jpg 800w, ./assets/images/our-start-landscape-hi-dpi.jpg 1600w"
+            <source sizes="320px" media="(min-width: 800px)" srcset="./assets/images/our-start-portrait.jpg 382w,        ./assets/images/our-start-portrait-hi-dpi.jpg 764w">
+            <img sizes="800px" srcset="./assets/images/our-start-landscape.jpg 800w,                                     ./assets/images/our-start-landscape-hi-dpi.jpg 1600w"
               alt="Our founder, Jane Dou">
           </picture>
         </div>
@@ -99,7 +103,11 @@
       </div>
     </div>
   </div>
+  <!-- /page section -->
 
+
+
+  <!-- features -->
   <div id="features" class="page-section page-section--blue">
     <div class="wrapper">
 
@@ -143,22 +151,25 @@
       </div>
     </div>
   </div>
+  <!-- /features -->
+
   <!-- testimonials -->
-  <div id="testimonials" class="page-section page-section--testimonials">
+  <div id="testimonials" class="page-section page-section--no-b-padding-until-large page-section--testimonials">
     <!-- wrapper -->
-    <div class="wrapper wrapper--no-padding-until-medium">
+    <div class="wrapper wrapper--no-padding-until-large">
 
       <h2 class="section-title section-title--blue">
         <img class="section-title__icon" src="assets/images/icons/comment.svg">Real
         <strong>Testimonials</strong>
       </h2>
       <!-- row -->
-      <div class="row row--equal-height-at-medium row--gutters row--gutters-small row--t-padding generic-content-container">
+      <div class="row row--equal-height-at-large row--gutters row--gutters-small row--t-padding generic-content-container">
 
-        <div class="row__medium-4">
+        <!-- column -->
+        <div class="row__large-4">
           <div class="testimonial">
             <div class="testimonial__photo">
-              <img src="assets/images/testimonial-jane.jpg">
+              <img sizes="160px" srcset="assets/images/testimonial-jane.jpg 160w, assets/images/testimonial-jane-hi-dpi-i.jpg 320w" alt="Jane Doe">
             </div>
             <h3 class="testimonial__title">Jane Doe</h3>
             <h4 class="testimonial__subtitle">9 Time Escaper</h4>
@@ -168,27 +179,28 @@
               magna aliqua.&rdquo;</p>
           </div>
         </div>
+        <!-- /column -->
 
-        
-
-          <div class="row__medium-4">
-            <div class="testimonial">
-              <div class="testimonial__photo">
-                <img src="assets/images/testimonial-john.jpg">
-              </div>
-              <h3 class="testimonial__title">John Smith</h3>
-              <h4 class="testimonial__subtitle">4 Time Escaper</h4>
-              <p>&ldquo;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                Lorem ipsum dolor sit amet, consectetur.&rdquo;</p>
-            </div>
-          </div>
-
-
-        <div class="row__medium-4">
+        <!-- column -->
+        <div class="row__large-4">
           <div class="testimonial">
             <div class="testimonial__photo">
-              <img src="assets/images/testimonial-cat.jpg">
+              <img sizes="160px" srcset="assets/images/testimonial-john.jpg 160w, assets/images/testimonial-john-hi-dpi-i.jpg 320w" alt="John Smith">
+            </div>
+            <h3 class="testimonial__title">John Smith</h3>
+            <h4 class="testimonial__subtitle">4 Time Escaper</h4>
+            <p>&ldquo;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              Lorem ipsum dolor sit amet, consectetur.&rdquo;</p>
+          </div>
+        </div>
+        <!-- /column -->
+
+        <!-- column -->
+        <div class="row__large-4">
+          <div class="testimonial testimonial--last">
+            <div class="testimonial__photo">
+              <img sizes="160px" srcset="assets/images/testimonial-cat-i.jpg 160w, assets/images/testimonial-cat-hi-dpi-i.jpg 320w" alt="McKitty">
             </div>
             <h3 class="testimonial__title">Cat McKitty</h3>
             <h4 class="testimonial__subtitle">6 Time Escaper</h4>
@@ -196,19 +208,21 @@
               Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.&rdquo;</p>
           </div>
-          </>
         </div>
-        <!-- /row -->
-      </div>
-      <!-- /wrapper -->
-    </div>
-    <!-- /testimonials -->
+        <!-- /column -->
 
-    <footer>
-      <p>Copyright &copy; 2016 Clear View Escapes. All rights reserved.
-        <a href="#" class="btn btn--orange">Get in Touch</a>
-      </p>
-    </footer>
+      </div>
+      <!-- /row -->
+    </div>
+    <!-- /wrapper -->
+  </div>
+  <!-- /testimonials -->
+
+  <footer>
+    <p>Copyright &copy; 2016 Clear View Escapes. All rights reserved.
+      <a href="#" class="btn btn--orange">Get in Touch</a>
+    </p>
+  </footer>
 </body>
 
 </html>
