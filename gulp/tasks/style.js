@@ -7,17 +7,20 @@ var   gulp                                = require('gulp'),
       //now we can nest our rules
       nested                              = require('postcss-nested'),
       cssImport                           = require('postcss-import'),
-      mixins                              = require('postcss-mixins');
+      mixins                              = require('postcss-mixins'),
+      plumber                             = require('gulp-plumber');
+      
 
 gulp.task('styles', function () {
   // console.log("Imaging Sass or PostCSS task is running here.");
   return gulp.src('./app/assets/styles/styles.css')
+  .pipe(plumber())
   .pipe(postcss([cssImport, mixins, cssvars, nested, autoprefixer]))
   //чтобы gulp не впадал в панику при ошибке в css и делал вид, что все норм:)
-  .on('error', function (errorInfo) {
+  // .on('error', function (errorInfo) {
     //чтобы еще и видеть ошибку
-    console.log(errorInfo.toString());
-    this.emit('end');
-  })
+  //   console.log(errorInfo.toString());
+  //   this.emit('end');
+  // })
   .pipe(gulp.dest('./app/temp/styles'));
 });

@@ -20,6 +20,7 @@
     "gulp-cssnano": "2.1.2",
     "gulp-imagemin": "4.0.0",
     "gulp-modernizr": "1.0.0-alpha",
+    "gulp-plumber": "^1.2.0",
     "gulp-postcss": "7.0.0",
     "gulp-rename": "1.2.2",
     "gulp-rev": "8.1.0",

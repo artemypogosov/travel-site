@@ -580,9 +580,10 @@ a {
   }
 
 @media (min-width: 530px) {
-    .wrapper--b-margin {
-      margin-bottom: 4.125rem;
-    }
+
+.wrapper--b-margin {
+      margin-bottom: 4.125rem
+  }
   }
 
 .wrapper .wrapper {
