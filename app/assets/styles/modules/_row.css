@@ -26,9 +26,6 @@
       float: left;
       width: 33.33%;
     }
-    &__medium-4--larger {
-      width: 37%;
-    }
     &__medium-6 {
       float: left;
       width: 50%;
@@ -36,6 +33,9 @@
     &__medium-8 {
       float: left;
       width: 66.66%;
+    }
+    &__medium-4--larger {
+      width: 37%;
     }
     &__medium-8--smaller {
       width: 63%;
@@ -62,23 +62,22 @@
     }
   }
   /* Equal height of columns */
-  &--equal-height-at-medium{
+  &--equal-height-at-medium {
     @mixin atMedium {
-        display: flex;
+      display: flex;
     }
-    & > div {
+    &>div {
       float: none;
       display: flex;
     }
   }
-  &--equal-height-at-large{
+  &--equal-height-at-large {
     @mixin atLarge {
-        display: flex;
+      display: flex;
     }
-    & > div {
+    &>div {
       float: none;
       display: flex;
     }
   }
-  
 }
