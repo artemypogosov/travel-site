@@ -766,9 +766,6 @@ a {
       float: left;
       width: 33.33%;
     }
-    .row__medium-4--larger {
-      width: 37%;
-    }
     .row__medium-6 {
       float: left;
       width: 50%;
@@ -776,6 +773,9 @@ a {
     .row__medium-8 {
       float: left;
       width: 66.66%;
+    }
+    .row__medium-4--larger {
+      width: 37%;
     }
     .row__medium-8--smaller {
       width: 63%;
@@ -807,14 +807,14 @@ a {
 
 @media (min-width: 800px) {
 
-.row--equal-height-at-medium{
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex
+.row--equal-height-at-medium {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex
   }
   }
 
-.row--equal-height-at-medium > div {
+.row--equal-height-at-medium>div {
       float: none;
       display: -webkit-box;
       display: -ms-flexbox;
@@ -823,14 +823,14 @@ a {
 
 @media (min-width: 1010px) {
 
-.row--equal-height-at-large{
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex
+.row--equal-height-at-large {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex
   }
   }
 
-.row--equal-height-at-large > div {
+.row--equal-height-at-large>div {
       float: none;
       display: -webkit-box;
       display: -ms-flexbox;
