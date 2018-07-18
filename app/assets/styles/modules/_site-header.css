@@ -1,0 +1,116 @@
+.site-header {
+  padding: 6px 0;
+  position: absolute;
+  z-index: 10;
+  min-width: 100%;
+  transition: background-color .4s ease-out;
+  &--transparent {
+    background-color: rgba($mainBlue, .7);
+  }
+  @mixin atMedium {
+    background-color: rgba($mainBlue, .3);
+  }
+  &__btn-container {
+    padding-bottom: 1rem;
+    padding-top: 0.4rem;
+    @mixin atMedium {
+      float: right;
+      padding-top: 0.4rem;
+      padding-bottom: 0;
+    }
+  }
+  &__logo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) scale(.8);
+    transform-origin: 50% 0;
+    background-color: $mainBlue;
+    padding: 26px 36px;
+    @mixin atMedium {
+      left: auto;
+      transform: translateX(0);
+    }
+  }
+  &__logo__indent {
+    text-indent: -9999px;
+  }
+  &__menu-icon {
+    width: 30px;
+    height: 29px;
+    /* background-color: #FFF; */
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 10;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: #FFF;
+      width: 1.875rem;
+      height: 0.3125rem;
+      transition: transform .4s ease-out;
+      transform-origin: 0 0;
+    }
+    &__middle {
+      position: absolute;
+      top: 12px;
+      left: 0;
+      background-color: #FFF;
+      width: 1.875rem;
+      height: 0.3125rem;
+      transition: all .4s ease-out;
+      transform-origin: 0 50%;
+
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background-color: #FFF;
+      width: 1.875rem;
+      height: 0.3125rem;
+      transition: transform .4s ease-out;
+      transform-origin: 0% 100%;
+    }
+    @mixin atMedium {
+      display: none;
+    }
+  }
+  &__menu-icon--show-x {
+    &::before {
+      transform: rotate(45deg) scaleX(1.25);
+    }
+    .site-header__menu-icon__middle {
+      opacity: 0;
+      transform: scaleX(0);
+    }
+    &::after {
+      transform: rotate(-45deg) scaleX(1.25) translateY(1px);
+    }
+  }
+  &__menu-content {
+    transform: scale(1.2);
+    opacity: 0;
+    transition: all .4s ease-out;
+    position: relative;
+    z-index: -10;
+    margin-top: 90px;
+    text-align: center;
+    @mixin atMedium {
+      opacity: 1;
+      z-index: 10;
+      margin-top: 0;
+      transform: scale(1);
+    }
+    &--is-visible {
+      transform: scale(1);
+      display: block;
+      opacity: 1;
+      z-index: 10;
+    }
+  }
+}

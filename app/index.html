@@ -14,22 +14,39 @@
 </head>
 
 <body>
-  <header>
-    <img src="assets/images/icons/clear-view-escapes.svg">
-    <a href="#" class="btn">Get in Touch</a>
-    <nav>
-      <ul>
-        <li>
-          <a href="#our-beginning">Our Beginning</a>
-        </li>
-        <li>
-          <a href="#features">Features</a>
-        </li>
-        <li>
-          <a href="#testimonials">Testimonials</a>
-        </li>
-      </ul>
-    </nav>
+  <header class="site-header">
+    <div class="wrapper wrapper--small">
+      <div class="site-header__logo">
+        <div class="site-header__logo__indent icon icon--clear-view-escapes">Clear View Escapes</div>
+      </div>
+
+      <!-- Action button -->
+      <div class="site-header__menu-icon">
+        <div class="site-header__menu-icon__middle"></div>
+      </div>
+
+      <!-- /Action button -->
+
+      <div class="site-header__menu-content">
+        <div class="site-header__btn-container">
+          <a href="#" class="btn">Get in Touch</a>
+        </div>
+        <nav class="primary-nav primary-nav--pull-right">
+          <ul>
+            <li>
+              <a href="#our-beginning">Our Beginning</a>
+            </li>
+            <li>
+              <a href="#features">Features</a>
+            </li>
+            <li>
+              <a href="#testimonials">Testimonials</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+    </div>
   </header>
   <!-- large-hero -->
   <div class="large-hero">
@@ -69,7 +86,7 @@
         <img sizes="(min-width=970px) 976px, 100vw" srcset="./assets/images/first-trip-low-res.jpg 565w, ./assets/images/first-trip.jpg 976w, ./assets/images/first-trip-hi-dpi.jpg 1952w"
           alt="Couple walking down a street.">
       </div>
-      
+
       <div class="row row--gutters">
         <div class="row__medium-4 row__medium-4--larger">
           <picture>
@@ -109,12 +126,12 @@
   <div id="features" class="page-section page-section--blue">
     <div class="wrapper">
 
-<!-- Star -->
+      <!-- Star -->
       <h2 class="section-title">
         <span class="icon icon--star section-title__icon"></span> Our
         <strong>Features</strong>
       </h2>
-<!-- /Star -->
+      <!-- /Star -->
 
 
       <div class="row row--gutters-large generic-content-container">
@@ -221,13 +238,17 @@
   <!-- /testimonials -->
 
   <footer class="site-footer">
-<div class="wrapper">
-      <p><span class="site-footer--text">Copyright &copy; 2016 Clear View Escapes. All rights reserved.</span>
+    <div class="wrapper">
+      <p>
+        <span class="site-footer--text">Copyright &copy; 2016 Clear View Escapes. All rights reserved.</span>
         <a href="#" class="btn btn--orange">Get in Touch</a>
       </p>
-</div>
+    </div>
   </footer>
 
+  <!-- scripts -->
+  <script src="/temp/scripts/app-bundle.js"></script>
+  <!-- /scripts -->
 </body>
 
 </html>

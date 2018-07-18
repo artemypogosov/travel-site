@@ -8,14 +8,15 @@ var   gulp                                = require('gulp'),
       nested                              = require('postcss-nested'),
       cssImport                           = require('postcss-import'),
       mixins                              = require('postcss-mixins'),
-      plumber                             = require('gulp-plumber');
+      plumber                             = require('gulp-plumber'),
+      hexrgba                             = require('postcss-hexrgba');
       
 
 gulp.task('styles', function () {
   // console.log("Imaging Sass or PostCSS task is running here.");
   return gulp.src('./app/assets/styles/styles.css')
   .pipe(plumber())
-  .pipe(postcss([cssImport, mixins, cssvars, nested, autoprefixer]))
+  .pipe(postcss([cssImport, mixins, cssvars, nested, hexrgba, autoprefixer]))
   //чтобы gulp не впадал в панику при ошибке в css и делал вид, что все норм:)
   // .on('error', function (errorInfo) {
     //чтобы еще и видеть ошибку
