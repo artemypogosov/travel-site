@@ -43,7 +43,7 @@
     }
   }
   &__logo__indent {
-    text-indent: -9999px;
+    text-indent: -9999px; 
   }
   &__menu-icon {
     width: 30px;
