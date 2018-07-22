@@ -22,6 +22,12 @@
     padding-right: 0;
   }
 
+  &--narrow {
+    width: 320px;
+    @mixin atMedium {
+    width: 470px;
+    }
+  }
   &--no-padding-until-medium {
     @mixin atMedium {
       padding-left: 18px;
