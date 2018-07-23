@@ -5,6 +5,7 @@ import Modal from './modules/Modal'
 import $ from 'jquery';
 
 
+
 var mobileMenu = new MobileMenu();
 
 new RevealOnScrol($(".feature-item"), "85%");
